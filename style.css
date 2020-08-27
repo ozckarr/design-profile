@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+    font-size: 12px; 
+}
+
+header{
+    background-color: #f6f3e7;
+    width: 100%;
+    height: 6em;
+}
+
+header img{
+    height: 5em;
+    margin: 0.5em;
+}
+
+.header-background{
+    background-color: #f6f3e7;
+    width: 100%;
+    height: 6em;
+    position: absolute;
+    z-index: -1;
+}
+
+.menu-background{
+    background-color: #977156;
+    width: 100%;
+    height: 2em;
+    position: absolute;
+    top:6em;
+    z-index: -1;
+}
+
+
+.menu-section{
+    background-color: #977156;
+    width: 100%;
+    height: 2em;
+    color: #f6f3e7;   
+}
+
+.menu-section p{
+    font-family: 'Overlock', cursive;
+    font-size: 16px;
+    margin-left: 0.5em;
+}
+
+.menu-section a{
+    font-family: 'Overlock', cursive;
+    font-size: 16px;
+    text-decoration: none;
+    color: #f6f3e7; 
+}
+
+.menu-section a:hover{
+    color: #566C97; 
+    text-decoration: underline;
+}
+
+.fa-bars{
+    font-size: 20px;
+    margin: 0.10em 0  0 0.3em;
+    color: #f6f3e7; 
+}
+
+.welcome-section p{
+    margin: 1em;
+}
+
+.slider{
+    height: 8em;
+    width: 100%;
+    background-image: url("./images/ronni-kurtz-p2lIZCcFMF0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.slider img{
+    width: 100%;
+    height: 0.3em;
+    position:relative;
+    top:7.3em;
+}
+
+.h1-header {
+    margin: 0.5em 0;
+}
+
+.h1-header h1{
+    font-family: 'Overlock', cursive;
+    color: #977156;
+    font-size: 22px;
+    margin-left: 0.5em;
+}
+
+.h1-header img{
+    width: 100%;
+    height: 0.3em;
+    position:relative;
+    bottom:0.2em;
+}
+
+.h2-header h2{
+    font-family: 'Overlock', cursive;
+    font-size: 18px;
+    color: #977156;
+    height: 1.3em;
+    margin-left: 0.5em ;
+}
+
+.h2-header{
+    background-color: #f6f3e7;
+    padding-top: 0.2em;
+}
+
+.contact-image{
+    background-image: url("./images/neonbrand-C6TExpu8Znk-unsplash.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 65%;
+    height: 25em;
+}
+
+.contact-content{
+    font-weight: bold;
+    margin: 0.5em;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-screen{
+    display: block;
+}
+
+.desktop-screen{
+    display: none;
+}
+
+footer{
+    font-weight: bold;
+    color: #f6f3e7;
+    margin: 1.5em 0 0 0.5em;
+}
+
+.footer-background {
+    background-color: #977156;
+    width: 100%;
+    height: 4em;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    margin-left: 0.5em;
+}
+
+
+
+.read-more{
+    font-weight: bold;
+    color: #566C97; 
+    position: relative;
+    bottom: 0;
+}
+
+
+.offer-content{
+    width: 100%;
+}
+
+.offer-img{
+    width: 100%;
+    background-size: cover;
+    height: 12.5em;
+}
+
+.offer-img1 {
+    background-image: url("./images/steinar-engeland-SgyH_Ix9lNE-unsplash.jpg");
+    background-position: bottom;
+}
+
+.offer-img2 {
+    background-image: url("./images/lana-graves-Kie9IoEQyPc-unsplash.jpg");
+    background-position: bottom;
+}
+
+.offer-img3 {
+    background-image: url("./images/anastasia-taioglou-xK4loR7lmnM-unsplash.jpg"); 
+}
+
+.offer-box{
+    margin: 0.5em;
+    height: 100%;
+}
+
+.offer-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.offer-container-reverse{
+    display: flex;
+    flex-direction: column;
+}
+
+.line{
+    width: 100%;
+    height: 0.3em;
+    position: relative;
+    bottom:0.8em;
+}
+
+.line-container{
+    height: 0;
+}
+
+.yes-i-was-lazy{
+    display: none;
+}
+
+@media screen and (min-width: 44em) {
+    .yes-i-was-lazy{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 50em) {
+    .maincontent{
+        width: 50em;
+        margin: auto;
+    }
+
+    .contact-container{
+        flex-direction: row-reverse;
+    }
+
+    .contact-image{
+        background-image: url("./images/neonbrand-C6TExpu8Znk-unsplash.jpg");
+        width: 27em;
+    }
+
+    .mobile-screen{
+        display: none;
+    }
+    
+    .desktop-screen{
+        display: block;
+    }
+
+    .yes-i-was-lazy{
+        display: none;
+    }
+
+    .offer-container{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .offer-container-reverse{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .offer-content{
+        width: 56%;
+    }
+    
+    .offer-img{
+        width: 44%;
+        background-size: cover;
+        height: auto;
+    }
+}
