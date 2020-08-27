@@ -6,6 +6,20 @@
     font-size: 12px; 
 }
 
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+
+.maincontent{
+    min-height: 95vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 4em;
+}
+
 header{
     background-color: #f6f3e7;
     width: 100%;
@@ -142,21 +156,6 @@ header img{
     display: none;
 }
 
-footer{
-    font-weight: bold;
-    color: #f6f3e7;
-    margin: 1.5em 0 0 0.5em;
-}
-
-.footer-background {
-    background-color: #977156;
-    width: 100%;
-    height: 4em;
-    position: absolute;
-    z-index: -1;
-    right: 0;
-    margin-left: 0.5em;
-}
 
 
 
@@ -218,18 +217,37 @@ footer{
     height: 0;
 }
 
-.yes-i-was-lazy{
-    display: none;
+
+footer{
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 4em;
+    background-color: #977156;
 }
 
-@media screen and (min-width: 44em) {
-    .yes-i-was-lazy{
-        display: block;
-    }
+.footer-content {
+    width: 100%;
+    margin: auto;
+}
+
+.footer-content p{
+    font-weight: bold;
+    color: #f6f3e7;
+    padding: 1.5em 0 0 0.5em;
 }
 
 @media screen and (min-width: 50em) {
     .maincontent{
+        width: 50em;
+        margin: auto;
+    }
+
+    .footer{
+        position: absolute;
+    }
+
+    .footer-content{
         width: 50em;
         margin: auto;
     }
